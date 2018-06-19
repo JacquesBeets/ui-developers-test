@@ -79,7 +79,6 @@
                               <input 
                                 type="text" 
                                 class="form-control mb-3"
-                                style="input:focus{border-color: grey;}" 
                                 id="nameInput" 
                                 placeholder="Your Name" 
                                 v-model="name"
