@@ -1,7 +1,4 @@
-//TODO
-//Form validation
-//Favicon
-
+//Animation
 
 TweenMax.from(".header-text", 1 ,{opacity:0, delay:0.2})
 TweenMax.staggerFrom("#Box-Stroke", 1, {rotation: 360, y:-500})
