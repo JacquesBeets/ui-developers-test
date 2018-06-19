@@ -1,4 +1,6 @@
 .vscode/
+docs/
 dist/
+public/
 .firebaserc
 firebase.json

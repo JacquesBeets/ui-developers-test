@@ -50,10 +50,11 @@ new Vue({
       }.bind(this), 5000);
     },
     clearValues: function(){
-      this.name = null,
-      this.email = null,
-      this.date = null,
+      this.name = null
+      this.email = null
+      this.date = null
       this.password = null
+      this.errors = []
     }
   }
 })
