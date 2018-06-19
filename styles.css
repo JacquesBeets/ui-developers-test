@@ -1,0 +1,107 @@
+body, html {
+  height: 100%;
+  font-family: 'PT Sans', sans-serif;
+}
+
+#app {
+  height: 100%;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+.st0{
+  fill:#FFFFFF;
+  stroke:#000000;
+  stroke-width:50;
+  stroke-miterlimit:10;
+}
+
+.st1 {
+  fill:black;
+}
+
+column {
+  margin-bottom: 50px; 
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+#Box-fill {
+  fill: white;
+}
+
+#snackbar {
+  visibility: hidden; 
+  min-width: 250px;
+  width: 300px; 
+  background-color: rgb(71, 134, 29); 
+  color: #fff; 
+  text-align: center; 
+  border-radius: 5px; 
+  padding: 16px; 
+  position: fixed; 
+  z-index: 1; 
+  left: 50%;
+  margin-left: -150px;
+  bottom: 30px;
+}
+
+#snackbar.show {
+  visibility: visible; 
+  animation: fadein 0.5s, fadeout 0.5s 3.5s;
+}
+
+.form-control:focus {
+  border-color: #5f5f5f;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(110, 110, 110, 0.5);
+}
+
+.contact-btn button{
+  margin-bottom: 70px;
+}
+
+.contact-btn button:hover{
+  background-color: black;
+}
+
+.landingCard-enter-active {
+  animation: flip-in 0.5s ease-in forwards;
+}
+
+.landingCard-leave-active {
+  animation: flip-out 0.5s ease-out forwards;
+}
+
+
+
+@keyframes flip-in {
+  from {
+    transform: rotateY(90deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes flip-out {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(90deg);
+  }
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
